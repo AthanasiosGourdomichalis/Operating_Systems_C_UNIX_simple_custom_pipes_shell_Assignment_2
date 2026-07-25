@@ -37,7 +37,7 @@ library behavior revealed that getline(3) internally allocates dynamic memory
 via malloc when passed a NULL buffer or zero size, so freeing it prevents 
 memory leaks. 
 
-2. mysh2.c: Building upon mysh1, mysh2 adds support for command-line arguments.
+# 2. mysh2.c: Building upon mysh1, mysh2 adds support for command-line arguments.
   
 o Argument Parsing: Input tokens are initially extracted using strtok(3) with " \t\n" 
 as delimiters. Inside a while loop, subsequent tokens are parsed and sequentially 
@@ -74,7 +74,7 @@ Switching to dynamic memory allocation resolved these issues. Furthermore, study
 the manual pages for chdir(2) and getcwd(3) proved invaluable for implementing 
 directory navigation correctly.
 
-3. mysh.3: Building upon mysh1 and mysh2, mysh3 adds support for pipes.
+# 3. mysh.3: Building upon mysh1 and mysh2, mysh3 adds support for pipes.
     
 o Parsing & Splitting: After reading user input via getline(3), I iterate through the char 
 array (C-string) searching for the pipe delimiter character '|'. If no pipe is found, 
