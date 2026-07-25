@@ -1,0 +1,2 @@
+# Operating_Systems_C_UNIX_simple_custom_pipes_shell_Assignment_2
+In this assignment, the objective is to implement a minimalistic shell whose sole purpose will be to read commands from standard input (keyboard) and execute them. We are required to implement three shells of increasing complexity and difficulty. These shells must be named mysh1 through mysh3. READ ASSIGNMENT.PDF FOR FURTHER DESCRIPTION.
